@@ -1,0 +1,11 @@
+D:\C# Programs\COMSATS-GPA-Calculator\COMSATS-GPA-Calculator\bin\Debug\COMSATS-GPA-Calculator.exe.config
+D:\C# Programs\COMSATS-GPA-Calculator\COMSATS-GPA-Calculator\bin\Debug\COMSATS-GPA-Calculator.exe
+D:\C# Programs\COMSATS-GPA-Calculator\COMSATS-GPA-Calculator\bin\Debug\COMSATS-GPA-Calculator.pdb
+D:\C# Programs\COMSATS-GPA-Calculator\COMSATS-GPA-Calculator\obj\Debug\COMSATS-GPA-Calculator.csproj.AssemblyReference.cache
+D:\C# Programs\COMSATS-GPA-Calculator\COMSATS-GPA-Calculator\obj\Debug\COMSATS_GPA_Calculator.Form1.resources
+D:\C# Programs\COMSATS-GPA-Calculator\COMSATS-GPA-Calculator\obj\Debug\COMSATS_GPA_Calculator.Properties.Resources.resources
+D:\C# Programs\COMSATS-GPA-Calculator\COMSATS-GPA-Calculator\obj\Debug\COMSATS-GPA-Calculator.csproj.GenerateResource.cache
+D:\C# Programs\COMSATS-GPA-Calculator\COMSATS-GPA-Calculator\obj\Debug\COMSATS-GPA-Calculator.csproj.CoreCompileInputs.cache
+D:\C# Programs\COMSATS-GPA-Calculator\COMSATS-GPA-Calculator\obj\Debug\COMSATS-GPA-Calculator.exe
+D:\C# Programs\COMSATS-GPA-Calculator\COMSATS-GPA-Calculator\obj\Debug\COMSATS-GPA-Calculator.pdb
+D:\C# Programs\COMSATS-GPA-Calculator\COMSATS-GPA-Calculator\obj\Debug\COMSATS_GPA_Calculator.Form2.resources
