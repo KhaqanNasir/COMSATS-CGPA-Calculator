@@ -35,6 +35,7 @@ namespace COMSATS_GPA_Calculator
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Form2 f2 = new Form2();
+            this.Visible = false;
             f2.Show();
             
         }
@@ -44,6 +45,21 @@ namespace COMSATS_GPA_Calculator
 
             this.Close();
             
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            DateTime currentDateTime = DateTime.Now;
+            DayOfWeek currentDay = currentDateTime.DayOfWeek;
+            label2.Text = currentDay+" "+currentDateTime.ToString();
+            label2.Visible= true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form3 f3 = new Form3();
+            this.Visible = false;
+            f3.Show();
         }
     }
 }

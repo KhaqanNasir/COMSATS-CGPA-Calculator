@@ -9,3 +9,4 @@ D:\C# Programs\COMSATS-GPA-Calculator\COMSATS-GPA-Calculator\obj\Debug\COMSATS-G
 D:\C# Programs\COMSATS-GPA-Calculator\COMSATS-GPA-Calculator\obj\Debug\COMSATS-GPA-Calculator.exe
 D:\C# Programs\COMSATS-GPA-Calculator\COMSATS-GPA-Calculator\obj\Debug\COMSATS-GPA-Calculator.pdb
 D:\C# Programs\COMSATS-GPA-Calculator\COMSATS-GPA-Calculator\obj\Debug\COMSATS_GPA_Calculator.Form2.resources
+D:\C# Programs\COMSATS-GPA-Calculator\COMSATS-GPA-Calculator\obj\Debug\COMSATS_GPA_Calculator.Form3.resources

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace COMSATS_GPA_Calculator
 {
@@ -27,9 +28,14 @@ namespace COMSATS_GPA_Calculator
         private void button1_Click_1(object sender, EventArgs e)
         {
             Form1 f2 = new Form1();
-            f2.Show();
             this.Close();
+            f2.Visible = true;
 
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://sahiwal.comsats.edu.pk/");
         }
     }
 }
