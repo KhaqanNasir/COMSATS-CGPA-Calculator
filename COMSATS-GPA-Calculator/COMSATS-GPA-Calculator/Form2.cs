@@ -27,9 +27,7 @@ namespace COMSATS_GPA_Calculator
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Form1 f2 = new Form1();
             this.Close();
-            f2.Visible = true;
 
         }
 

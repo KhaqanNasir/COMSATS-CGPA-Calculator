@@ -178,6 +178,42 @@
             this.label90 = new System.Windows.Forms.Label();
             this.textBox52 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.label91 = new System.Windows.Forms.Label();
+            this.label92 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label93 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label94 = new System.Windows.Forms.Label();
+            this.label95 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label96 = new System.Windows.Forms.Label();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label97 = new System.Windows.Forms.Label();
+            this.label98 = new System.Windows.Forms.Label();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.label99 = new System.Windows.Forms.Label();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.label100 = new System.Windows.Forms.Label();
+            this.label101 = new System.Windows.Forms.Label();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.label102 = new System.Windows.Forms.Label();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.label103 = new System.Windows.Forms.Label();
+            this.label104 = new System.Windows.Forms.Label();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.label105 = new System.Windows.Forms.Label();
+            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.label106 = new System.Windows.Forms.Label();
+            this.label107 = new System.Windows.Forms.Label();
+            this.comboBox11 = new System.Windows.Forms.ComboBox();
+            this.label108 = new System.Windows.Forms.Label();
+            this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.label109 = new System.Windows.Forms.Label();
+            this.label110 = new System.Windows.Forms.Label();
+            this.comboBox13 = new System.Windows.Forms.ComboBox();
+            this.label111 = new System.Windows.Forms.Label();
+            this.comboBox14 = new System.Windows.Forms.ComboBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -235,6 +271,7 @@
             this.linkLabel3.TabIndex = 3;
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "3.    Semester GPA";
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
             // linkLabel4
             // 
@@ -1874,6 +1911,544 @@
             this.button3.Visible = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // label91
+            // 
+            this.label91.AutoSize = true;
+            this.label91.BackColor = System.Drawing.Color.DarkGray;
+            this.label91.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label91.Font = new System.Drawing.Font("Candara", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label91.Location = new System.Drawing.Point(458, 188);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(157, 45);
+            this.label91.TabIndex = 164;
+            this.label91.Text = "Subject 1";
+            this.label91.Visible = false;
+            // 
+            // label92
+            // 
+            this.label92.AutoSize = true;
+            this.label92.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label92.Location = new System.Drawing.Point(523, 254);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(151, 25);
+            this.label92.TabIndex = 165;
+            this.label92.Text = "Obtained Marks";
+            this.label92.Visible = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "A            4.00             85 and above",
+            "A-           3.66             80 - 84",
+            "B+          3.33             75 - 79",
+            "B             3.00             71 - 74",
+            "B-           2.66            68 - 70",
+            "C+          2.33            64 - 67",
+            "C             2.00            61 - 63",
+            "C-           1.66             58 - 60",
+            "D+          1.30             54 - 57",
+            "D            1.00             50 - 53",
+            "F             0.00              Below 50"});
+            this.comboBox1.Location = new System.Drawing.Point(713, 246);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(360, 33);
+            this.comboBox1.TabIndex = 166;
+            this.comboBox1.Visible = false;
+            // 
+            // label93
+            // 
+            this.label93.AutoSize = true;
+            this.label93.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label93.Location = new System.Drawing.Point(1102, 249);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(153, 25);
+            this.label93.TabIndex = 167;
+            this.label93.Text = "Total Credit Hrs.";
+            this.label93.Visible = false;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "4",
+            "3",
+            "2",
+            "1",
+            "0"});
+            this.comboBox2.Location = new System.Drawing.Point(1279, 245);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(99, 33);
+            this.comboBox2.TabIndex = 168;
+            this.comboBox2.Visible = false;
+            // 
+            // label94
+            // 
+            this.label94.AutoSize = true;
+            this.label94.BackColor = System.Drawing.Color.DarkGray;
+            this.label94.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label94.Font = new System.Drawing.Font("Candara", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label94.Location = new System.Drawing.Point(458, 297);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(163, 45);
+            this.label94.TabIndex = 169;
+            this.label94.Text = "Subject 2";
+            this.label94.Visible = false;
+            // 
+            // label95
+            // 
+            this.label95.AutoSize = true;
+            this.label95.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label95.Location = new System.Drawing.Point(523, 365);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(151, 25);
+            this.label95.TabIndex = 170;
+            this.label95.Text = "Obtained Marks";
+            this.label95.Visible = false;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "A            4.00             85 and above",
+            "A-           3.66             80 - 84",
+            "B+          3.33             75 - 79",
+            "B             3.00             71 - 74",
+            "B-           2.66            68 - 70",
+            "C+          2.33            64 - 67",
+            "C             2.00            61 - 63",
+            "C-           1.66             58 - 60",
+            "D+          1.30             54 - 57",
+            "D            1.00             50 - 53",
+            "F             0.00              Below 50"});
+            this.comboBox3.Location = new System.Drawing.Point(713, 361);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(360, 33);
+            this.comboBox3.TabIndex = 171;
+            this.comboBox3.Visible = false;
+            // 
+            // label96
+            // 
+            this.label96.AutoSize = true;
+            this.label96.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label96.Location = new System.Drawing.Point(1102, 365);
+            this.label96.Name = "label96";
+            this.label96.Size = new System.Drawing.Size(153, 25);
+            this.label96.TabIndex = 172;
+            this.label96.Text = "Total Credit Hrs.";
+            this.label96.Visible = false;
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "4",
+            "3",
+            "2",
+            "1",
+            "0"});
+            this.comboBox4.Location = new System.Drawing.Point(1279, 366);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(99, 33);
+            this.comboBox4.TabIndex = 173;
+            this.comboBox4.Visible = false;
+            // 
+            // label97
+            // 
+            this.label97.AutoSize = true;
+            this.label97.BackColor = System.Drawing.Color.DarkGray;
+            this.label97.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label97.Font = new System.Drawing.Font("Candara", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label97.Location = new System.Drawing.Point(458, 420);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(162, 45);
+            this.label97.TabIndex = 174;
+            this.label97.Text = "Subject 3";
+            this.label97.Visible = false;
+            // 
+            // label98
+            // 
+            this.label98.AutoSize = true;
+            this.label98.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label98.Location = new System.Drawing.Point(523, 485);
+            this.label98.Name = "label98";
+            this.label98.Size = new System.Drawing.Size(151, 25);
+            this.label98.TabIndex = 175;
+            this.label98.Text = "Obtained Marks";
+            this.label98.Visible = false;
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "A            4.00             85 and above",
+            "A-           3.66             80 - 84",
+            "B+          3.33             75 - 79",
+            "B             3.00             71 - 74",
+            "B-           2.66            68 - 70",
+            "C+          2.33            64 - 67",
+            "C             2.00            61 - 63",
+            "C-           1.66             58 - 60",
+            "D+          1.30             54 - 57",
+            "D            1.00             50 - 53",
+            "F             0.00              Below 50"});
+            this.comboBox5.Location = new System.Drawing.Point(713, 477);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(360, 33);
+            this.comboBox5.TabIndex = 176;
+            this.comboBox5.Visible = false;
+            // 
+            // label99
+            // 
+            this.label99.AutoSize = true;
+            this.label99.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label99.Location = new System.Drawing.Point(1102, 485);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(153, 25);
+            this.label99.TabIndex = 177;
+            this.label99.Text = "Total Credit Hrs.";
+            this.label99.Visible = false;
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.comboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Items.AddRange(new object[] {
+            "4",
+            "3",
+            "2",
+            "1",
+            "0"});
+            this.comboBox6.Location = new System.Drawing.Point(1279, 477);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(99, 33);
+            this.comboBox6.TabIndex = 178;
+            this.comboBox6.Visible = false;
+            // 
+            // label100
+            // 
+            this.label100.AutoSize = true;
+            this.label100.BackColor = System.Drawing.Color.DarkGray;
+            this.label100.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label100.Font = new System.Drawing.Font("Candara", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label100.Location = new System.Drawing.Point(458, 535);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(165, 45);
+            this.label100.TabIndex = 179;
+            this.label100.Text = "Subject 4";
+            this.label100.Visible = false;
+            // 
+            // label101
+            // 
+            this.label101.AutoSize = true;
+            this.label101.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label101.Location = new System.Drawing.Point(523, 595);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(151, 25);
+            this.label101.TabIndex = 180;
+            this.label101.Text = "Obtained Marks";
+            this.label101.Visible = false;
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.comboBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Items.AddRange(new object[] {
+            "A            4.00             85 and above",
+            "A-           3.66             80 - 84",
+            "B+          3.33             75 - 79",
+            "B             3.00             71 - 74",
+            "B-           2.66            68 - 70",
+            "C+          2.33            64 - 67",
+            "C             2.00            61 - 63",
+            "C-           1.66             58 - 60",
+            "D+          1.30             54 - 57",
+            "D            1.00             50 - 53",
+            "F             0.00              Below 50"});
+            this.comboBox7.Location = new System.Drawing.Point(713, 590);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(360, 33);
+            this.comboBox7.TabIndex = 181;
+            this.comboBox7.Visible = false;
+            // 
+            // label102
+            // 
+            this.label102.AutoSize = true;
+            this.label102.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label102.Location = new System.Drawing.Point(1102, 599);
+            this.label102.Name = "label102";
+            this.label102.Size = new System.Drawing.Size(153, 25);
+            this.label102.TabIndex = 182;
+            this.label102.Text = "Total Credit Hrs.";
+            this.label102.Visible = false;
+            // 
+            // comboBox8
+            // 
+            this.comboBox8.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.comboBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Items.AddRange(new object[] {
+            "4",
+            "3",
+            "2",
+            "1",
+            "0"});
+            this.comboBox8.Location = new System.Drawing.Point(1279, 587);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(99, 33);
+            this.comboBox8.TabIndex = 183;
+            this.comboBox8.Visible = false;
+            // 
+            // label103
+            // 
+            this.label103.AutoSize = true;
+            this.label103.BackColor = System.Drawing.Color.DarkGray;
+            this.label103.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label103.Font = new System.Drawing.Font("Candara", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label103.Location = new System.Drawing.Point(458, 627);
+            this.label103.Name = "label103";
+            this.label103.Size = new System.Drawing.Size(163, 45);
+            this.label103.TabIndex = 184;
+            this.label103.Text = "Subject 5";
+            this.label103.Visible = false;
+            // 
+            // label104
+            // 
+            this.label104.AutoSize = true;
+            this.label104.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label104.Location = new System.Drawing.Point(523, 692);
+            this.label104.Name = "label104";
+            this.label104.Size = new System.Drawing.Size(151, 25);
+            this.label104.TabIndex = 185;
+            this.label104.Text = "Obtained Marks";
+            this.label104.Visible = false;
+            // 
+            // comboBox9
+            // 
+            this.comboBox9.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.comboBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox9.FormattingEnabled = true;
+            this.comboBox9.Items.AddRange(new object[] {
+            "A            4.00             85 and above",
+            "A-           3.66             80 - 84",
+            "B+          3.33             75 - 79",
+            "B             3.00             71 - 74",
+            "B-           2.66            68 - 70",
+            "C+          2.33            64 - 67",
+            "C             2.00            61 - 63",
+            "C-           1.66             58 - 60",
+            "D+          1.30             54 - 57",
+            "D            1.00             50 - 53",
+            "F             0.00              Below 50"});
+            this.comboBox9.Location = new System.Drawing.Point(713, 684);
+            this.comboBox9.Name = "comboBox9";
+            this.comboBox9.Size = new System.Drawing.Size(360, 33);
+            this.comboBox9.TabIndex = 186;
+            this.comboBox9.Visible = false;
+            // 
+            // label105
+            // 
+            this.label105.AutoSize = true;
+            this.label105.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label105.Location = new System.Drawing.Point(1102, 687);
+            this.label105.Name = "label105";
+            this.label105.Size = new System.Drawing.Size(153, 25);
+            this.label105.TabIndex = 187;
+            this.label105.Text = "Total Credit Hrs.";
+            this.label105.Visible = false;
+            // 
+            // comboBox10
+            // 
+            this.comboBox10.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.comboBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox10.FormattingEnabled = true;
+            this.comboBox10.Items.AddRange(new object[] {
+            "4",
+            "3",
+            "2",
+            "1",
+            "0"});
+            this.comboBox10.Location = new System.Drawing.Point(1279, 684);
+            this.comboBox10.Name = "comboBox10";
+            this.comboBox10.Size = new System.Drawing.Size(99, 33);
+            this.comboBox10.TabIndex = 188;
+            this.comboBox10.Visible = false;
+            // 
+            // label106
+            // 
+            this.label106.AutoSize = true;
+            this.label106.BackColor = System.Drawing.Color.DarkGray;
+            this.label106.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label106.Font = new System.Drawing.Font("Candara", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label106.Location = new System.Drawing.Point(458, 735);
+            this.label106.Name = "label106";
+            this.label106.Size = new System.Drawing.Size(165, 45);
+            this.label106.TabIndex = 189;
+            this.label106.Text = "Subject 6";
+            this.label106.Visible = false;
+            // 
+            // label107
+            // 
+            this.label107.AutoSize = true;
+            this.label107.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label107.Location = new System.Drawing.Point(523, 804);
+            this.label107.Name = "label107";
+            this.label107.Size = new System.Drawing.Size(151, 25);
+            this.label107.TabIndex = 190;
+            this.label107.Text = "Obtained Marks";
+            this.label107.Visible = false;
+            // 
+            // comboBox11
+            // 
+            this.comboBox11.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.comboBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox11.FormattingEnabled = true;
+            this.comboBox11.Items.AddRange(new object[] {
+            "A            4.00             85 and above",
+            "A-           3.66             80 - 84",
+            "B+          3.33             75 - 79",
+            "B             3.00             71 - 74",
+            "B-           2.66            68 - 70",
+            "C+          2.33            64 - 67",
+            "C             2.00            61 - 63",
+            "C-           1.66             58 - 60",
+            "D+          1.30             54 - 57",
+            "D            1.00             50 - 53",
+            "F             0.00              Below 50"});
+            this.comboBox11.Location = new System.Drawing.Point(713, 801);
+            this.comboBox11.Name = "comboBox11";
+            this.comboBox11.Size = new System.Drawing.Size(360, 33);
+            this.comboBox11.TabIndex = 191;
+            this.comboBox11.Visible = false;
+            // 
+            // label108
+            // 
+            this.label108.AutoSize = true;
+            this.label108.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label108.Location = new System.Drawing.Point(1102, 804);
+            this.label108.Name = "label108";
+            this.label108.Size = new System.Drawing.Size(153, 25);
+            this.label108.TabIndex = 192;
+            this.label108.Text = "Total Credit Hrs.";
+            this.label108.Visible = false;
+            // 
+            // comboBox12
+            // 
+            this.comboBox12.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.comboBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox12.FormattingEnabled = true;
+            this.comboBox12.Items.AddRange(new object[] {
+            "4",
+            "3",
+            "2",
+            "1",
+            "0"});
+            this.comboBox12.Location = new System.Drawing.Point(1279, 796);
+            this.comboBox12.Name = "comboBox12";
+            this.comboBox12.Size = new System.Drawing.Size(99, 33);
+            this.comboBox12.TabIndex = 193;
+            this.comboBox12.Visible = false;
+            // 
+            // label109
+            // 
+            this.label109.AutoSize = true;
+            this.label109.BackColor = System.Drawing.Color.DarkGray;
+            this.label109.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label109.Font = new System.Drawing.Font("Candara", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label109.Location = new System.Drawing.Point(458, 844);
+            this.label109.Name = "label109";
+            this.label109.Size = new System.Drawing.Size(162, 45);
+            this.label109.TabIndex = 194;
+            this.label109.Text = "Subject 7";
+            this.label109.Visible = false;
+            // 
+            // label110
+            // 
+            this.label110.AutoSize = true;
+            this.label110.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label110.Location = new System.Drawing.Point(523, 907);
+            this.label110.Name = "label110";
+            this.label110.Size = new System.Drawing.Size(151, 25);
+            this.label110.TabIndex = 195;
+            this.label110.Text = "Obtained Marks";
+            this.label110.Visible = false;
+            // 
+            // comboBox13
+            // 
+            this.comboBox13.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.comboBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox13.FormattingEnabled = true;
+            this.comboBox13.Items.AddRange(new object[] {
+            "A            4.00             85 and above",
+            "A-           3.66             80 - 84",
+            "B+          3.33             75 - 79",
+            "B             3.00             71 - 74",
+            "B-           2.66            68 - 70",
+            "C+          2.33            64 - 67",
+            "C             2.00            61 - 63",
+            "C-           1.66             58 - 60",
+            "D+          1.30             54 - 57",
+            "D            1.00             50 - 53",
+            "F             0.00              Below 50"});
+            this.comboBox13.Location = new System.Drawing.Point(713, 902);
+            this.comboBox13.Name = "comboBox13";
+            this.comboBox13.Size = new System.Drawing.Size(360, 33);
+            this.comboBox13.TabIndex = 196;
+            this.comboBox13.Visible = false;
+            // 
+            // label111
+            // 
+            this.label111.AutoSize = true;
+            this.label111.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label111.Location = new System.Drawing.Point(1102, 907);
+            this.label111.Name = "label111";
+            this.label111.Size = new System.Drawing.Size(153, 25);
+            this.label111.TabIndex = 197;
+            this.label111.Text = "Total Credit Hrs.";
+            this.label111.Visible = false;
+            // 
+            // comboBox14
+            // 
+            this.comboBox14.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.comboBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox14.FormattingEnabled = true;
+            this.comboBox14.Items.AddRange(new object[] {
+            "4",
+            "3",
+            "2",
+            "1",
+            "0"});
+            this.comboBox14.Location = new System.Drawing.Point(1279, 899);
+            this.comboBox14.Name = "comboBox14";
+            this.comboBox14.Size = new System.Drawing.Size(99, 33);
+            this.comboBox14.TabIndex = 198;
+            this.comboBox14.Visible = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.LightCyan;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button4.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(1552, 822);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(157, 50);
+            this.button4.TabIndex = 199;
+            this.button4.Text = "Calculate";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Visible = false;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1882,6 +2457,42 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1809, 919);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.comboBox14);
+            this.Controls.Add(this.label111);
+            this.Controls.Add(this.comboBox13);
+            this.Controls.Add(this.label110);
+            this.Controls.Add(this.label109);
+            this.Controls.Add(this.comboBox12);
+            this.Controls.Add(this.label108);
+            this.Controls.Add(this.comboBox11);
+            this.Controls.Add(this.label107);
+            this.Controls.Add(this.label106);
+            this.Controls.Add(this.comboBox10);
+            this.Controls.Add(this.label105);
+            this.Controls.Add(this.comboBox9);
+            this.Controls.Add(this.label104);
+            this.Controls.Add(this.label103);
+            this.Controls.Add(this.comboBox8);
+            this.Controls.Add(this.label102);
+            this.Controls.Add(this.comboBox7);
+            this.Controls.Add(this.label101);
+            this.Controls.Add(this.label100);
+            this.Controls.Add(this.comboBox6);
+            this.Controls.Add(this.label99);
+            this.Controls.Add(this.comboBox5);
+            this.Controls.Add(this.label98);
+            this.Controls.Add(this.label97);
+            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.label96);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.label95);
+            this.Controls.Add(this.label94);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.label93);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label92);
+            this.Controls.Add(this.label91);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.textBox52);
             this.Controls.Add(this.label90);
@@ -2196,5 +2807,41 @@
         private System.Windows.Forms.Label label90;
         private System.Windows.Forms.TextBox textBox52;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label91;
+        private System.Windows.Forms.Label label92;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label93;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label94;
+        private System.Windows.Forms.Label label95;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label96;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Label label97;
+        private System.Windows.Forms.Label label98;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.Label label99;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.Label label100;
+        private System.Windows.Forms.Label label101;
+        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.Label label102;
+        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.Label label103;
+        private System.Windows.Forms.Label label104;
+        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.Label label105;
+        private System.Windows.Forms.ComboBox comboBox10;
+        private System.Windows.Forms.Label label106;
+        private System.Windows.Forms.Label label107;
+        private System.Windows.Forms.ComboBox comboBox11;
+        private System.Windows.Forms.Label label108;
+        private System.Windows.Forms.ComboBox comboBox12;
+        private System.Windows.Forms.Label label109;
+        private System.Windows.Forms.Label label110;
+        private System.Windows.Forms.ComboBox comboBox13;
+        private System.Windows.Forms.Label label111;
+        private System.Windows.Forms.ComboBox comboBox14;
+        private System.Windows.Forms.Button button4;
     }
 }
