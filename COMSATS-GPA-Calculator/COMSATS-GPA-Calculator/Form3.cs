@@ -111,7 +111,7 @@ namespace COMSATS_GPA_Calculator
                 textBox11.Text == "" || textBox12.Text == "" || textBox13.Text == ""  || textBox14.Text == "" || textBox15.Text == "" ||
                 textBox16.Text == ""|| textBox17.Text == "" || textBox18.Text == "" || textBox19.Text == "")
             {
-                MessageBox.Show("Please filled all data", "Informative Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please filled all data", "Informative Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
             }
             else
             {
@@ -132,7 +132,7 @@ namespace COMSATS_GPA_Calculator
                 MessageBox.Show("Assignment Marks : " + assignSum + "\n" + "Quizes Marks : " + quizSum + "\n"
                     + "MidTerm Marks : " + midTermMarks + "\n" + "Final Marks : " + finalMarks + "\n\n" +
                     "Total Marks : " + (assignSum + quizSum + midTermMarks + finalMarks), "Informative Message",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             }
         }
 
@@ -215,7 +215,7 @@ namespace COMSATS_GPA_Calculator
                 textBox51.Text == "" || textBox52.Text == "")
 
             {
-                MessageBox.Show("Please filled all data", "Informative Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please filled all data", "Informative Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
             }
             else
             {
@@ -251,7 +251,7 @@ namespace COMSATS_GPA_Calculator
                     + "Theorey MidTerm Marks : " + midTermMarks + "\n" + "Theorey Final Marks : " + finalMarks + "\n\n" +
                     "Theorey Total Marks : " + theoryTotal+"\n\n"+"Lab Assignments Marks : "+labAssignSum+
                     "\n"+"Lab MidTerm Marks : "+labMidTermMarks+"\n"+"Lab Final Marks : "+labFinalMarks+"\n\n"+"Lab Total Marks : "+labTotal+
-                    "\n\n\n"+"Total Marks : "+TotalMarks, "Informative Message",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    "\n\n\n"+"Total Marks : "+TotalMarks, "Informative Message",MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             }
         }
 
@@ -320,6 +320,659 @@ namespace COMSATS_GPA_Calculator
             comboBox11.Visible = true; label108.Visible=true; comboBox12.Visible = true;
             label109.Visible = true; label110.Visible = true; comboBox13.Visible = true;
             label111.Visible = true; comboBox14.Visible = true; button4.Visible = true;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedIndex == -1 || comboBox2.SelectedIndex == -1)
+            {
+                MessageBox.Show("Please Select Atleast One Course", "Informative Text", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+            }
+            else
+            {
+                int i = comboBox1.SelectedIndex;
+                int j = comboBox2.SelectedIndex;
+                float course1 = 0, course2 = 0, course3 = 0, course4 = 0, course5 = 0, course6 = 0, course7 = 0;
+                int course1credit = 0, course2credit = 0, course3credit = 0, course4credit = 0, course5credit = 0, course6credit = 0, course7credit = 0;
+                int i1 = comboBox3.SelectedIndex;
+                int j1 = comboBox4.SelectedIndex;
+                int i2 = comboBox5.SelectedIndex;
+                int j2 = comboBox6.SelectedIndex;
+                int i3 = comboBox7.SelectedIndex;
+                int j3 = comboBox8.SelectedIndex;
+                int i4 = comboBox9.SelectedIndex;
+                int j4 = comboBox10.SelectedIndex;
+                int i5 = comboBox11.SelectedIndex;
+                int j5 = comboBox12.SelectedIndex;
+                int i6 = comboBox13.SelectedIndex;
+                int j6 = comboBox14.SelectedIndex;
+                // course 1
+                if (i == 0)
+                {
+                    if (i == 0 && j == 0) { course1 = 4 * 4.00f; course1credit = 4; }
+                    else if (i == 0 && j == 1) { course1 = 3 * 4.00f; course1credit = 3; }
+                    else if (i == 0 && j == 2) { course1 = 2 * 4.00f; course1credit = 2; }
+                    else if (i == 0 && j == 3) { course1 = 1 * 4.00f; course1credit = 1; }
+                    else if (i == 0 && j == 4) { course1 = 0 * 4.00f; course1credit = 0; }
+                }
+                else if (i == 1)
+                {
+                    if (i == 1 && j == 0) { course1 = 4 * 3.66f; course1credit = 4; }
+                    else if (i == 1 && j == 1) { course1 = 3 * 3.66f; course1credit = 3; }
+                    else if (i == 1 && j == 2) { course1 = 2 * 3.66f; course1credit = 2; }
+                    else if (i == 1 && j == 3) { course1 = 1 * 3.66f; course1credit = 1; }
+                    else if (i == 1 && j == 4) { course1 = 0 * 3.66f; course1credit = 0; }
+                }
+                else if (i == 2)
+                {
+                    if (i == 2 && j == 0) { course1 = 4 * 3.33f; course1credit = 4; }
+                    else if (i == 2 && j == 1) { course1 = 3 * 3.33f; course1credit = 3; }
+                    else if (i == 2 && j == 2) { course1 = 2 * 3.33f; course1credit = 2; }
+                    else if (i == 2 && j == 3) { course1 = 1 * 3.33f; course1credit = 1; }
+                    else if (i == 2 && j == 4) { course1 = 0 * 3.33f; course1credit = 0; }
+                }
+                else if (i == 3)
+                {
+                    if (i == 3 && j == 0) { course1 = 4 * 3.00f; course1credit = 4; }
+                    else if (i == 3 && j == 1) { course1 = 3 * 3.00f; course1credit = 3; }
+                    else if (i == 3 && j == 2) { course1 = 2 * 3.00f; course1credit = 2; }
+                    else if (i == 3 && j == 3) { course1 = 1 * 3.00f; course1credit = 1; }
+                    else if (i == 3 && j == 4) { course1 = 0 * 3.00f; course1credit = 0; }
+                }
+                else if (i == 4)
+                {
+                    if (i == 4 && j == 0) { course1 = 4 * 2.66f; course1credit = 4; }
+                    else if (i == 4 && j == 1) { course1 = 3 * 2.66f; course1credit = 3; }
+                    else if (i == 4 && j == 2) { course1 = 2 * 2.66f; course1credit = 2; }
+                    else if (i == 4 && j == 3) { course1 = 1 * 2.66f; course1credit = 1; }
+                    else if (i == 4 && j == 4) { course1 = 0 * 2.66f; course1credit = 0; }
+                }
+                else if (i == 5)
+                {
+                    if (i == 5 && j == 0) { course1 = 4 * 2.33f; course1credit = 4; }
+                    else if (i == 5 && j == 1) { course1 = 3 * 2.33f; course1credit = 3; }
+                    else if (i == 5 && j == 2) { course1 = 2 * 2.33f; course1credit = 2; }
+                    else if (i == 5 && j == 3) { course1 = 1 * 2.33f; course1credit = 1; }
+                    else if (i == 5 && j == 4) { course1 = 0 * 2.33f; course1credit = 0; }
+                }
+                else if (i == 6)
+                {
+                    if (i == 6 && j == 0) { course1 = 4 * 2.00f; course1credit = 4; }
+                    else if (i == 6 && j == 1) { course1 = 3 * 2.00f; course1credit = 3; }
+                    else if (i == 6 && j == 2) { course1 = 2 * 2.00f; course1credit = 2; }
+                    else if (i == 6 && j == 3) { course1 = 1 * 2.00f; course1credit = 1; }
+                    else if (i == 6 && j == 4) { course1 = 0 * 2.00f; course1credit = 0; }
+                }
+                else if (i == 7)
+                {
+                    if (i == 7 && j == 0) { course1 = 4 * 1.66f; course1credit = 4; }
+                    else if (i == 7 && j == 1) { course1 = 3 * 1.66f; course1credit = 3; }
+                    else if (i == 7 && j == 2) { course1 = 2 * 1.66f; course1credit = 2; }
+                    else if (i == 7 && j == 3) { course1 = 1 * 1.66f; course1credit = 1; }
+                    else if (i == 7 && j == 4) { course1 = 0 * 1.66f; course1credit = 0; }
+                }
+                else if (i == 8)
+                {
+                    if (i == 8 && j == 0) { course1 = 4 * 1.33f; course1credit = 4; }
+                    else if (i == 8 && j == 1) { course1 = 3 * 1.33f; course1credit = 3; }
+                    else if (i == 8 && j == 2) { course1 = 2 * 1.33f; course1credit = 2; }
+                    else if (i == 8 && j == 3) { course1 = 1 * 1.33f; course1credit = 1; }
+                    else if (i == 8 && j == 4) { course1 = 0 * 1.33f; course1credit = 0; }
+                }
+                else if (i == 9)
+                {
+                    if (i == 9 && j == 0) { course1 = 4 * 1.00f; course1credit = 4; }
+                    else if (i == 9 && j == 1) { course1 = 3 * 1.00f; course1credit = 3; }
+                    else if (i == 9 && j == 2) { course1 = 2 * 1.00f; course1credit = 2; }
+                    else if (i == 9 && j == 3) { course1 = 1 * 1.00f; course1credit = 1; }
+                    else if (i == 9 && j == 4) { course1 = 0 * 1.00f; course1credit = 0; }
+                }
+                else if (i == 10)
+                {
+                    if (i == 10 && j == 0) { course1 = 4 * 0.00f; course1credit = 4; }
+                    else if (i == 10 && j == 1) { course1 = 3 * 0.00f; course1credit = 3; }
+                    else if (i == 10 && j == 2) { course1 = 2 * 0.00f; course1credit = 2; }
+                    else if (i == 10 && j == 3) { course1 = 1 * 0.00f; course1credit = 1; }
+                    else if (i == 10 && j == 4) { course1 = 0 * 0.00f; course1credit = 0; }
+                }
+                // second course
+                if (i1 == 0)
+                {
+                    if (i1 == 0 && j1 == 0) { course2 = 4 * 4.00f; course2credit = 4; }
+                    else if (i1 == 0 && j1 == 1) { course2 = 3 * 4.00f; course2credit = 3; }
+                    else if (i1 == 0 && j1 == 2) { course2 = 2 * 4.00f; course2credit = 2; }
+                    else if (i1 == 0 && j1 == 3) { course2 = 1 * 4.00f; course2credit = 1; }
+                    else if (i1 == 0 && j1 == 4) { course2 = 0 * 4.00f; course2credit = 0; }
+                }
+                else if (i1 == 1)
+                {
+                    if (i1 == 1 && j1 == 0) { course2 = 4 * 3.66f; course2credit = 4; }
+                    else if (i1 == 1 && j1 == 1) { course2 = 3 * 3.66f; course2credit = 3; }
+                    else if (i1 == 1 && j1 == 2) { course2 = 2 * 3.66f; course2credit = 2; }
+                    else if (i1 == 1 && j1 == 3) { course2 = 1 * 3.66f; course2credit = 1; }
+                    else if (i1 == 1 && j1 == 4) { course2 = 0 * 3.66f; course2credit = 0; }
+                }
+                else if (i1 == 2)
+                {
+                    if (i1 == 2 && j1 == 0) { course2 = 4 * 3.33f; course2credit = 4; }
+                    else if (i1 == 2 && j1 == 1) { course2 = 3 * 3.33f; course2credit = 3; }
+                    else if (i1 == 2 && j1 == 2) { course2 = 2 * 3.33f; course2credit = 2; }
+                    else if (i1 == 2 && j1 == 3) { course2 = 1 * 3.33f; course2credit = 1; }
+                    else if (i1 == 2 && j1 == 4) { course2 = 0 * 3.33f; course2credit = 0; }
+                }
+                else if (i1 == 3)
+                {
+                    if (i1 == 3 && j1 == 0) { course2 = 4 * 3.00f; course2credit = 4; }
+                    else if (i1 == 3 && j1 == 1) { course2 = 3 * 3.00f; course2credit = 3; }
+                    else if (i1 == 3 && j1 == 2) { course2 = 2 * 3.00f; course2credit = 2; }
+                    else if (i1 == 3 && j1 == 3) { course2 = 1 * 3.00f; course2credit = 1; }
+                    else if (i1 == 3 && j1 == 4) { course2 = 0 * 3.00f; course2credit = 0; }
+                }
+                else if (i1 == 4)
+                {
+                    if (i1 == 4 && j1 == 0) { course2 = 4 * 2.66f; course2credit = 4; }
+                    else if (i1 == 4 && j1 == 1) { course2 = 3 * 2.66f; course2credit = 3; }
+                    else if (i1 == 4 && j1 == 2) { course2 = 2 * 2.66f; course2credit = 2; }
+                    else if (i1 == 4 && j1 == 3) { course2 = 1 * 2.66f; course2credit = 1; }
+                    else if (i1 == 4 && j1 == 4) { course2 = 0 * 2.66f; course2credit = 0; }
+                }
+                else if (i1 == 5)
+                {
+                    if (i1 == 5 && j1 == 0) { course2 = 4 * 2.33f; course2credit = 4; }
+                    else if (i1 == 5 && j1 == 1) { course2 = 3 * 2.33f; course2credit = 3; }
+                    else if (i1 == 5 && j1 == 2) { course2 = 2 * 2.33f; course2credit = 2; }
+                    else if (i1 == 5 && j1 == 3) { course2 = 1 * 2.33f; course2credit = 1; }
+                    else if (i1 == 5 && j1 == 4) { course2 = 0 * 2.33f; course2credit = 0; }
+                }
+                else if (i1 == 6)
+                {
+                    if (i1 == 6 && j1 == 0) { course2 = 4 * 2.00f; course2credit = 4; }
+                    else if (i1 == 6 && j1 == 1) { course2 = 3 * 2.00f; course2credit = 3; }
+                    else if (i1 == 6 && j1 == 2) { course2 = 2 * 2.00f; course2credit = 2; }
+                    else if (i1 == 6 && j1 == 3) { course2 = 1 * 2.00f; course2credit = 1; }
+                    else if (i1 == 6 && j1 == 4) { course2 = 0 * 2.00f; course2credit = 0; }
+                }
+                else if (i1 == 7)
+                {
+                    if (i1 == 7 && j1 == 0) { course2 = 4 * 1.66f; course2credit = 4; }
+                    else if (i1 == 7 && j1 == 1) { course2 = 3 * 1.66f; course2credit = 3; }
+                    else if (i1 == 7 && j1 == 2) { course2 = 2 * 1.66f; course2credit = 2; }
+                    else if (i1 == 7 && j1 == 3) { course2 = 1 * 1.66f; course2credit = 1; }
+                    else if (i1 == 7 && j1 == 4) { course2 = 0 * 1.66f; course2credit = 0; }
+                }
+                else if (i1 == 8)
+                {
+                    if (i1 == 8 && j1 == 0) { course2 = 4 * 1.33f; course2credit = 4; }
+                    else if (i1 == 8 && j1 == 1) { course2 = 3 * 1.33f; course2credit = 3; }
+                    else if (i1 == 8 && j1 == 2) { course2 = 2 * 1.33f; course2credit = 2; }
+                    else if (i1 == 8 && j1 == 3) { course2 = 1 * 1.33f; course2credit = 1; }
+                    else if (i1 == 8 && j1 == 4) { course2 = 0 * 1.33f; course2credit = 0; }
+                }
+                else if (i1 == 9)
+                {
+                    if (i1 == 9 && j1 == 0) { course2 = 4 * 1.00f; course2credit = 4; }
+                    else if (i1 == 9 && j1 == 1) { course2 = 3 * 1.00f; course2credit = 3; }
+                    else if (i1 == 9 && j1 == 2) { course2 = 2 * 1.00f; course2credit = 2; }
+                    else if (i1 == 9 && j1 == 3) { course2 = 1 * 1.00f; course2credit = 1; }
+                    else if (i1 == 9 && j1 == 4) { course2 = 0 * 1.00f; course2credit = 0; }
+                }
+                else if (i1 == 10)
+                {
+                    if (i1 == 10 && j1 == 0) { course2 = 4 * 0.00f; course2credit = 4; }
+                    else if (i1 == 10 && j1 == 1) { course2 = 3 * 0.00f; course2credit = 3; }
+                    else if (i1 == 10 && j1 == 2) { course2 = 2 * 0.00f; course2credit = 2; }
+                    else if (i1 == 10 && j1 == 3) { course2 = 1 * 0.00f; course2credit = 1; }
+                    else if (i1 == 10 && j1 == 4) { course2 = 0 * 0.00f; course2credit = 0; }
+                }
+                // course 3
+                if (i2 == 0)
+                {
+                    if (i2 == 0 && j2 == 0) { course3 = 4 * 4.00f; course3credit = 4; }
+                    else if (i2 == 0 && j2 == 1) { course3 = 3 * 4.00f; course3credit = 3; }
+                    else if (i2 == 0 && j2 == 2) { course3 = 2 * 4.00f; course3credit = 2; }
+                    else if (i2 == 0 && j2 == 3) { course3 = 1 * 4.00f; course3credit = 1; }
+                    else if (i2 == 0 && j2 == 4) { course3 = 0 * 4.00f; course3credit = 0; }
+                }
+                else if (i2 == 1)
+                {
+                    if (i2 == 1 && j2 == 0) { course3 = 4 * 3.66f; course3credit = 4; }
+                    else if (i2 == 1 && j2 == 1) { course3 = 3 * 3.66f; course3credit = 3; }
+                    else if (i2 == 1 && j2 == 2) { course3 = 2 * 3.66f; course3credit = 2; }
+                    else if (i2 == 1 && j2 == 3) { course3 = 1 * 3.66f; course3credit = 1; }
+                    else if (i2 == 1 && j2 == 4) { course3 = 0 * 3.66f; course3credit = 0; }
+                }
+                else if (i2 == 2)
+                {
+                    if (i2 == 2 && j2 == 0) { course3 = 4 * 3.33f; course3credit = 4; }
+                    else if (i2 == 2 && j2 == 1) { course3 = 3 * 3.33f; course3credit = 3; }
+                    else if (i2 == 2 && j2 == 2) { course3 = 2 * 3.33f; course3credit = 2; }
+                    else if (i2 == 2 && j2 == 3) { course3 = 1 * 3.33f; course3credit = 1; }
+                    else if (i2 == 2 && j2 == 4) { course3 = 0 * 3.33f; course3credit = 0; }
+                }
+                else if (i2 == 3)
+                {
+                    if (i2 == 3 && j2 == 0) { course3 = 4 * 3.00f; course3credit = 4; }
+                    else if (i2 == 3 && j2 == 1) { course3 = 3 * 3.00f; course3credit = 3; }
+                    else if (i2 == 3 && j2 == 2) { course3 = 2 * 3.00f; course3credit = 2; }
+                    else if (i2 == 3 && j2 == 3) { course3 = 1 * 3.00f; course3credit = 1; }
+                    else if (i2 == 3 && j2 == 4) { course3 = 0 * 3.00f; course3credit = 0; }
+                }
+                else if (i2 == 4)
+                {
+                    if (i2 == 4 && j2 == 0) { course3 = 4 * 2.66f; course3credit = 4; }
+                    else if (i2 == 4 && j2 == 1) { course3 = 3 * 2.66f; course3credit = 3; }
+                    else if (i2 == 4 && j2 == 2) { course3 = 2 * 2.66f; course3credit = 2; }
+                    else if (i2 == 4 && j2 == 3) { course3 = 1 * 2.66f; course3credit = 1; }
+                    else if (i2 == 4 && j2 == 4) { course3 = 0 * 2.66f; course3credit = 0; }
+                }
+                else if (i2 == 5)
+                {
+                    if (i2 == 5 && j2 == 0) { course3 = 4 * 2.33f; course3credit = 4; }
+                    else if (i2 == 5 && j2 == 1) { course3 = 3 * 2.33f; course3credit = 3; }
+                    else if (i2 == 5 && j2 == 2) { course3 = 2 * 2.33f; course3credit = 2; }
+                    else if (i2 == 5 && j2 == 3) { course3 = 1 * 2.33f; course3credit = 1; }
+                    else if (i2 == 5 && j2 == 4) { course3 = 0 * 2.33f; course3credit = 0; }
+                }
+                else if (i2 == 6)
+                {
+                    if (i2 == 6 && j2 == 0) { course3 = 4 * 2.00f; course3credit = 4; }
+                    else if (i2 == 6 && j2 == 1) { course3 = 3 * 2.00f; course3credit = 3; }
+                    else if (i2 == 6 && j2 == 2) { course3 = 2 * 2.00f; course3credit = 2; }
+                    else if (i2 == 6 && j2 == 3) { course3 = 1 * 2.00f; course3credit = 1; }
+                    else if (i2 == 6 && j2 == 4) { course3 = 0 * 2.00f; course3credit = 0; }
+                }
+                else if (i2 == 7)
+                {
+                    if (i2 == 7 && j2 == 0) { course3 = 4 * 1.66f; course3credit = 4; }
+                    else if (i2 == 7 && j2 == 1) { course3 = 3 * 1.66f; course3credit = 3; }
+                    else if (i2 == 7 && j2 == 2) { course3 = 2 * 1.66f; course3credit = 2; }
+                    else if (i2 == 7 && j2 == 3) { course3 = 1 * 1.66f; course3credit = 1; }
+                    else if (i2 == 7 && j2 == 4) { course3 = 0 * 1.66f; course3credit = 0; }
+                }
+                else if (i2 == 8)
+                {
+                    if (i2 == 8 && j2 == 0) { course3 = 4 * 1.33f; course3credit = 4; }
+                    else if (i2 == 8 && j2 == 1) { course3 = 3 * 1.33f; course3credit = 3; }
+                    else if (i2 == 8 && j2 == 2) { course3 = 2 * 1.33f; course3credit = 2; }
+                    else if (i2 == 8 && j2 == 3) { course3 = 1 * 1.33f; course3credit = 1; }
+                    else if (i2 == 8 && j2 == 4) { course3 = 0 * 1.33f; course3credit = 0; }
+                }
+                else if (i2 == 9)
+                {
+                    if (i2 == 9 && j2 == 0) { course3 = 4 * 1.00f; course3credit = 4; }
+                    else if (i2 == 9 && j2 == 1) { course3 = 3 * 1.00f; course3credit = 3; }
+                    else if (i2 == 9 && j2 == 2) { course3 = 2 * 1.00f; course3credit = 2; }
+                    else if (i2 == 9 && j2 == 3) { course3 = 1 * 1.00f; course3credit = 1; }
+                    else if (i2 == 9 && j2 == 4) { course3 = 0 * 1.00f; course3credit = 0; }
+                }
+                else if (i2 == 10)
+                {
+                    if (i2 == 10 && j2 == 0) { course3 = 4 * 0.00f; course3credit = 4; }
+                    else if (i2 == 10 && j2 == 1) { course3 = 3 * 0.00f; course3credit = 3; }
+                    else if (i2 == 10 && j2 == 2) { course3 = 2 * 0.00f; course3credit = 2; }
+                    else if (i2 == 10 && j2 == 3) { course3 = 1 * 0.00f; course3credit = 1; }
+                    else if (i2 == 10 && j2 == 4) { course3 = 0 * 0.00f; course3credit = 0; }
+                }
+                // course 4
+                if (i3 == 0)
+                {
+                    if (i3 == 0 && j3 == 0) { course4 = 4 * 4.00f; course4credit = 4; }
+                    else if (i3 == 0 && j3 == 1) { course4 = 3 * 4.00f; course4credit = 3; }
+                    else if (i3 == 0 && j3 == 2) { course4 = 2 * 4.00f; course4credit = 2; }
+                    else if (i3 == 0 && j3 == 3) { course4 = 1 * 4.00f; course4credit = 1; }
+                    else if (i3 == 0 && j3 == 4) { course4 = 0 * 4.00f; course4credit = 0; }
+                }
+                else if (i3 == 1)
+                {
+                    if (i3 == 1 && j3 == 0) { course4 = 4 * 3.66f; course4credit = 4; }
+                    else if (i3 == 1 && j3 == 1) { course4 = 3 * 3.66f; course4credit = 3; }
+                    else if (i3 == 1 && j3 == 2) { course4 = 2 * 3.66f; course4credit = 2; }
+                    else if (i3 == 1 && j3 == 3) { course4 = 1 * 3.66f; course4credit = 1; }
+                    else if (i3 == 1 && j3 == 4) { course4 = 0 * 3.66f; course4credit = 0; }
+                }
+                else if (i3 == 2)
+                {
+                    if (i3 == 2 && j3 == 0) { course4 = 4 * 3.33f; course4credit = 4; }
+                    else if (i3 == 2 && j3 == 1) { course4 = 3 * 3.33f; course4credit = 3; }
+                    else if (i3 == 2 && j3 == 2) { course4 = 2 * 3.33f; course4credit = 2; }
+                    else if (i3 == 2 && j3 == 3) { course4 = 1 * 3.33f; course4credit = 1; }
+                    else if (i3 == 2 && j3 == 4) { course4 = 0 * 3.33f; course4credit = 0; }
+                }
+                else if (i3 == 3)
+                {
+                    if (i3 == 3 && j3 == 0) { course4 = 4 * 3.00f; course4credit = 4; }
+                    else if (i3 == 3 && j3 == 1) { course4 = 3 * 3.00f; course4credit = 3; }
+                    else if (i3 == 3 && j3 == 2) { course4 = 2 * 3.00f; course4credit = 2; }
+                    else if (i3 == 3 && j3 == 3) { course4 = 1 * 3.00f; course4credit = 1; }
+                    else if (i3 == 3 && j3 == 4) { course4 = 0 * 3.00f; course4credit = 0; }
+                }
+                else if (i3 == 4)
+                {
+                    if (i3 == 4 && j3 == 0) { course4 = 4 * 2.66f; course4credit = 4; }
+                    else if (i3 == 4 && j3 == 1) { course4 = 3 * 2.66f; course4credit = 3; }
+                    else if (i3 == 4 && j3 == 2) { course4 = 2 * 2.66f; course4credit = 2; }
+                    else if (i3 == 4 && j3 == 3) { course4 = 1 * 2.66f; course4credit = 1; }
+                    else if (i3 == 4 && j3 == 4) { course4 = 0 * 2.66f; course4credit = 0; }
+                }
+                else if (i3 == 5)
+                {
+                    if (i3 == 5 && j3 == 0) { course4 = 4 * 2.33f; course4credit = 4; }
+                    else if (i3 == 5 && j3 == 1) { course4 = 3 * 2.33f; course4credit = 3; }
+                    else if (i3 == 5 && j3 == 2) { course4 = 2 * 2.33f; course4credit = 2; }
+                    else if (i3 == 5 && j3 == 3) { course4 = 1 * 2.33f; course4credit = 1; }
+                    else if (i3 == 5 && j3 == 4) { course4 = 0 * 2.33f; course4credit = 0; }
+                }
+                else if (i3 == 6)
+                {
+                    if (i3 == 6 && j3 == 0) { course4 = 4 * 2.00f; course4credit = 4; }
+                    else if (i3 == 6 && j3 == 1) { course4 = 3 * 2.00f; course4credit = 3; }
+                    else if (i3 == 6 && j3 == 2) { course4 = 2 * 2.00f; course4credit = 2; }
+                    else if (i3 == 6 && j3 == 3) { course4 = 1 * 2.00f; course4credit = 1; }
+                    else if (i3 == 6 && j3 == 4) { course4 = 0 * 2.00f; course4credit = 0; }
+                }
+                else if (i3 == 7)
+                {
+                    if (i3 == 7 && j3 == 0) { course4 = 4 * 1.66f; course4credit = 4; }
+                    else if (i3 == 7 && j3 == 1) { course4 = 3 * 1.66f; course4credit = 3; }
+                    else if (i3 == 7 && j3 == 2) { course4 = 2 * 1.66f; course4credit = 2; }
+                    else if (i3 == 7 && j3 == 3) { course4 = 1 * 1.66f; course4credit = 1; }
+                    else if (i3 == 7 && j3 == 4) { course4 = 0 * 1.66f; course4credit = 0; }
+                }
+                else if (i3 == 8)
+                {
+                    if (i3 == 8 && j3 == 0) { course4 = 4 * 1.33f; course4credit = 4; }
+                    else if (i3 == 8 && j3 == 1) { course4 = 3 * 1.33f; course4credit = 3; }
+                    else if (i3 == 8 && j3 == 2) { course4 = 2 * 1.33f; course4credit = 2; }
+                    else if (i3 == 8 && j3 == 3) { course4 = 1 * 1.33f; course4credit = 1; }
+                    else if (i3 == 8 && j3 == 4) { course4 = 0 * 1.33f; course4credit = 0; }
+                }
+                else if (i3 == 9)
+                {
+                    if (i3 == 9 && j3 == 0) { course4 = 4 * 1.00f; course4credit = 4; }
+                    else if (i3 == 9 && j3 == 1) { course4 = 3 * 1.00f; course4credit = 3; }
+                    else if (i3 == 9 && j3 == 2) { course4 = 2 * 1.00f; course4credit = 2; }
+                    else if (i3 == 9 && j3 == 3) { course4 = 1 * 1.00f; course4credit = 1; }
+                    else if (i3 == 9 && j3 == 4) { course4 = 0 * 1.00f; course4credit = 0; }
+                }
+                else if (i3 == 10)
+                {
+                    if (i3 == 10 && j3 == 0) { course4 = 4 * 0.00f; course4credit = 4; }
+                    else if (i3 == 10 && j3 == 1) { course4 = 3 * 0.00f; course4credit = 3; }
+                    else if (i3 == 10 && j3 == 2) { course4 = 2 * 0.00f; course4credit = 2; }
+                    else if (i3 == 10 && j3 == 3) { course4 = 1 * 0.00f; course4credit = 1; }
+                    else if (i3 == 10 && j3 == 4) { course4 = 0 * 0.00f; course4credit = 0; }
+                }
+                // course 5
+                if (i4 == 0)
+                {
+                    if (i4 == 0 && j4 == 0) { course5 = 4 * 4.00f; course5credit = 4; }
+                    else if (i4 == 0 && j4 == 1) { course5 = 3 * 4.00f; course5credit = 3; }
+                    else if (i4 == 0 && j4 == 2) { course5 = 2 * 4.00f; course5credit = 2; }
+                    else if (i4 == 0 && j4 == 3) { course5 = 1 * 4.00f; course5credit = 1; }
+                    else if (i4 == 0 && j4 == 4) { course5 = 0 * 4.00f; course5credit = 0; }
+                }
+                else if (i4 == 1)
+                {
+                    if (i4 == 1 && j4 == 0) { course5 = 4 * 3.66f; course5credit = 4; }
+                    else if (i4 == 1 && j4 == 1) { course5 = 3 * 3.66f; course5credit = 3; }
+                    else if (i4 == 1 && j4 == 2) { course5 = 2 * 3.66f; course5credit = 2; }
+                    else if (i4 == 1 && j4 == 3) { course5 = 1 * 3.66f; course5credit = 1; }
+                    else if (i4 == 1 && j4 == 4) { course5 = 0 * 3.66f; course5credit = 0; }
+                }
+                else if (i4 == 2)
+                {
+                    if (i4 == 2 && j4 == 0) { course5 = 4 * 3.33f; course5credit = 4; }
+                    else if (i4 == 2 && j4 == 1) { course5 = 3 * 3.33f; course5credit = 3; }
+                    else if (i4 == 2 && j4 == 2) { course5 = 2 * 3.33f; course5credit = 2; }
+                    else if (i4 == 2 && j4 == 3) { course5 = 1 * 3.33f; course5credit = 1; }
+                    else if (i4 == 2 && j4 == 4) { course5 = 0 * 3.33f; course5credit = 0; }
+                }
+                else if (i4 == 3)
+                {
+                    if (i4 == 3 && j4 == 0) { course5 = 4 * 3.00f; course5credit = 4; }
+                    else if (i4 == 3 && j4 == 1) { course5 = 3 * 3.00f; course5credit = 3; }
+                    else if (i4 == 3 && j4 == 2) { course5 = 2 * 3.00f; course5credit = 2; }
+                    else if (i4 == 3 && j4 == 3) { course5 = 1 * 3.00f; course5credit = 1; }
+                    else if (i4 == 3 && j4 == 4) { course5 = 0 * 3.00f; course5credit = 0; }
+                }
+                else if (i4 == 4)
+                {
+                    if (i4 == 4 && j4 == 0) { course5 = 4 * 2.66f; course5credit = 4; }
+                    else if (i4 == 4 && j4 == 1) { course5 = 3 * 2.66f; course5credit = 3; }
+                    else if (i4 == 4 && j4 == 2) { course5 = 2 * 2.66f; course5credit = 2; }
+                    else if (i4 == 4 && j4 == 3) { course5 = 1 * 2.66f; course5credit = 1; }
+                    else if (i4 == 4 && j4 == 4) { course5 = 0 * 2.66f; course5credit = 0; }
+                }
+                else if (i4 == 5)
+                {
+                    if (i4 == 5 && j4 == 0) { course5 = 4 * 2.33f; course5credit = 4; }
+                    else if (i4 == 5 && j4 == 1) { course5 = 3 * 2.33f; course5credit = 3; }
+                    else if (i4 == 5 && j4 == 2) { course5 = 2 * 2.33f; course5credit = 2; }
+                    else if (i4 == 5 && j4 == 3) { course5 = 1 * 2.33f; course5credit = 1; }
+                    else if (i4 == 5 && j4 == 4) { course5 = 0 * 2.33f; course5credit = 0; }
+                }
+                else if (i4 == 6)
+                {
+                    if (i4 == 6 && j4 == 0) { course5 = 4 * 2.00f; course5credit = 4; }
+                    else if (i4 == 6 && j4 == 1) { course5 = 3 * 2.00f; course5credit = 3; }
+                    else if (i4 == 6 && j4 == 2) { course5 = 2 * 2.00f; course5credit = 2; }
+                    else if (i4 == 6 && j4 == 3) { course5 = 1 * 2.00f; course5credit = 1; }
+                    else if (i4 == 6 && j4 == 4) { course5 = 0 * 2.00f; course5credit = 0; }
+                }
+                else if (i4 == 7)
+                {
+                    if (i4 == 7 && j4 == 0) { course5 = 4 * 1.66f; course5credit = 4; }
+                    else if (i4 == 7 && j4 == 1) { course5 = 3 * 1.66f; course5credit = 3; }
+                    else if (i4 == 7 && j4 == 2) { course5 = 2 * 1.66f; course5credit = 2; }
+                    else if (i4 == 7 && j4 == 3) { course5 = 1 * 1.66f; course5credit = 1; }
+                    else if (i4 == 7 && j4 == 4) { course5 = 0 * 1.66f; course5credit = 0; }
+                }
+                else if (i4 == 8)
+                {
+                    if (i4 == 8 && j4 == 0) { course5 = 4 * 1.33f; course5credit = 4; }
+                    else if (i4 == 8 && j4 == 1) { course5 = 3 * 1.33f; course5credit = 3; }
+                    else if (i4 == 8 && j4 == 2) { course5 = 2 * 1.33f; course5credit = 2; }
+                    else if (i4 == 8 && j4 == 3) { course5 = 1 * 1.33f; course5credit = 1; }
+                    else if (i4 == 8 && j4 == 4) { course5 = 0 * 1.33f; course5credit = 0; }
+                }
+                else if (i4 == 9)
+                {
+                    if (i4 == 9 && j4 == 0) { course5 = 4 * 1.00f; course5credit = 4; }
+                    else if (i4 == 9 && j4 == 1) { course5 = 3 * 1.00f; course5credit = 3; }
+                    else if (i4 == 9 && j4 == 2) { course5 = 2 * 1.00f; course5credit = 2; }
+                    else if (i4 == 9 && j4 == 3) { course5 = 1 * 1.00f; course5credit = 1; }
+                    else if (i4 == 9 && j4 == 4) { course5 = 0 * 1.00f; course5credit = 0; }
+                }
+                else if (i4 == 10)
+                {
+                    if (i4 == 10 && j4 == 0) { course5 = 4 * 0.00f; course5credit = 4; }
+                    else if (i4 == 10 && j4 == 1) { course5 = 3 * 0.00f; course5credit = 3; }
+                    else if (i4 == 10 && j4 == 2) { course5 = 2 * 0.00f; course5credit = 2; }
+                    else if (i4 == 10 && j4 == 3) { course5 = 1 * 0.00f; course5credit = 1; }
+                    else if (i4 == 10 && j4 == 4) { course5 = 0 * 0.00f; course5credit = 0; }
+                }
+                // course 6
+                if (i5 == 0)
+                {
+                    if (i5 == 0 && j5 == 0) { course6 = 4 * 4.00f; course6credit = 4; }
+                    else if (i5 == 0 && j5 == 1) { course6 = 3 * 4.00f; course6credit = 3; }
+                    else if (i5 == 0 && j5 == 2) { course6 = 2 * 4.00f; course6credit = 2; }
+                    else if (i5 == 0 && j5 == 3) { course6 = 1 * 4.00f; course6credit = 1; }
+                    else if (i5 == 0 && j5 == 4) { course6 = 0 * 4.00f; course6credit = 0; }
+                }
+                else if (i5 == 1)
+                {
+                    if (i5 == 1 && j5 == 0) { course6 = 4 * 3.66f; course6credit = 4; }
+                    else if (i5 == 1 && j5 == 1) { course6 = 3 * 3.66f; course6credit = 3; }
+                    else if (i5 == 1 && j5 == 2) { course6 = 2 * 3.66f; course6credit = 2; }
+                    else if (i5 == 1 && j5 == 3) { course6 = 1 * 3.66f; course6credit = 1; }
+                    else if (i5 == 1 && j5 == 4) { course6 = 0 * 3.66f; course6credit = 0; }
+                }
+                else if (i5 == 2)
+                {
+                    if (i5 == 2 && j5 == 0) { course6 = 4 * 3.33f; course6credit = 4; }
+                    else if (i5 == 2 && j5 == 1) { course6 = 3 * 3.33f; course6credit = 3; }
+                    else if (i5 == 2 && j5 == 2) { course6 = 2 * 3.33f; course6credit = 2; }
+                    else if (i5 == 2 && j5 == 3) { course6 = 1 * 3.33f; course6credit = 1; }
+                    else if (i5 == 2 && j5 == 4) { course6 = 0 * 3.33f; course6credit = 0; }
+                }
+                else if (i5 == 3)
+                {
+                    if (i5 == 3 && j5 == 0) { course6 = 4 * 3.00f; course6credit = 4; }
+                    else if (i5 == 3 && j5 == 1) { course6 = 3 * 3.00f; course6credit = 3; }
+                    else if (i5 == 3 && j5 == 2) { course6 = 2 * 3.00f; course6credit = 2; }
+                    else if (i5 == 3 && j5 == 3) { course6 = 1 * 3.00f; course6credit = 1; }
+                    else if (i5 == 3 && j5 == 4) { course6 = 0 * 3.00f; course6credit = 0; }
+                }
+                else if (i5 == 4)
+                {
+                    if (i5 == 4 && j5 == 0) { course6 = 4 * 2.66f; course6credit = 4; }
+                    else if (i5 == 4 && j5 == 1) { course6 = 3 * 2.66f; course6credit = 3; }
+                    else if (i5 == 4 && j5 == 2) { course6 = 2 * 2.66f; course6credit = 2; }
+                    else if (i5 == 4 && j5 == 3) { course6 = 1 * 2.66f; course6credit = 1; }
+                    else if (i5 == 4 && j5 == 4) { course6 = 0 * 2.66f; course6credit = 0; }
+                }
+                else if (i5 == 5)
+                {
+                    if (i5 == 5 && j5 == 0) { course6 = 4 * 2.33f; course6credit = 4; }
+                    else if (i5 == 5 && j5 == 1) { course6 = 3 * 2.33f; course6credit = 3; }
+                    else if (i5 == 5 && j5 == 2) { course6 = 2 * 2.33f; course6credit = 2; }
+                    else if (i5 == 5 && j5 == 3) { course6 = 1 * 2.33f; course6credit = 1; }
+                    else if (i5 == 5 && j5 == 4) { course6 = 0 * 2.33f; course6credit = 0; }
+                }
+                else if (i5 == 6)
+                {
+                    if (i5 == 6 && j5 == 0) { course6 = 4 * 2.00f; course6credit = 4; }
+                    else if (i5 == 6 && j5 == 1) { course6 = 3 * 2.00f; course6credit = 3; }
+                    else if (i5 == 6 && j5 == 2) { course6 = 2 * 2.00f; course6credit = 2; }
+                    else if (i5 == 6 && j5 == 3) { course6 = 1 * 2.00f; course6credit = 1; }
+                    else if (i5 == 6 && j5 == 4) { course6 = 0 * 2.00f; course6credit = 0; }
+                }
+                else if (i5 == 7)
+                {
+                    if (i5 == 7 && j5 == 0) { course6 = 4 * 1.66f; course6credit = 4; }
+                    else if (i5 == 7 && j5 == 1) { course6 = 3 * 1.66f; course6credit = 3; }
+                    else if (i5 == 7 && j5 == 2) { course6 = 2 * 1.66f; course6credit = 2; }
+                    else if (i5 == 7 && j5 == 3) { course6 = 1 * 1.66f; course6credit = 1; }
+                    else if (i5 == 7 && j5 == 4) { course6 = 0 * 1.66f; course6credit = 0; }
+                }
+                else if (i5 == 8)
+                {
+                    if (i5 == 8 && j5 == 0) { course6 = 4 * 1.33f; course6credit = 4; }
+                    else if (i5 == 8 && j5 == 1) { course6 = 3 * 1.33f; course6credit = 3; }
+                    else if (i5 == 8 && j5 == 2) { course6 = 2 * 1.33f; course6credit = 2; }
+                    else if (i5 == 8 && j5 == 3) { course6 = 1 * 1.33f; course6credit = 1; }
+                    else if (i5 == 8 && j5 == 4) { course6 = 0 * 1.33f; course6credit = 0; }
+                }
+                else if (i5 == 9)
+                {
+                    if (i5 == 9 && j5 == 0) { course6 = 4 * 1.00f; course6credit = 4; }
+                    else if (i5 == 9 && j5 == 1) { course6 = 3 * 1.00f; course6credit = 3; }
+                    else if (i5 == 9 && j5 == 2) { course6 = 2 * 1.00f; course6credit = 2; }
+                    else if (i5 == 9 && j5 == 3) { course6 = 1 * 1.00f; course6credit = 1; }
+                    else if (i5 == 9 && j5 == 4) { course6 = 0 * 1.00f; course6credit = 0; }
+                }
+                else if (i5 == 10)
+                {
+                    if (i5 == 10 && j5 == 0) { course6 = 4 * 0.00f; course6credit = 4; }
+                    else if (i5 == 10 && j5 == 1) { course6 = 3 * 0.00f; course6credit = 3; }
+                    else if (i5 == 10 && j5 == 2) { course6 = 2 * 0.00f; course6credit = 2; }
+                    else if (i5 == 10 && j5 == 3) { course6 = 1 * 0.00f; course6credit = 1; }
+                    else if (i5 == 10 && j5 == 4) { course6 = 0 * 0.00f; course6credit = 0; }
+                }
+                // course 7
+                if (i6 == 0)
+                {
+                    if (i6 == 0 && j6 == 0) { course7 = 4 * 4.00f; course7credit = 4; }
+                    else if (i6 == 0 && j6 == 1) { course7 = 3 * 4.00f; course7credit = 3; }
+                    else if (i6 == 0 && j6 == 2) { course7 = 2 * 4.00f; course7credit = 2; }
+                    else if (i6 == 0 && j6 == 3) { course7 = 1 * 4.00f; course7credit = 1; }
+                    else if (i6 == 0 && j6 == 4) { course7 = 0 * 4.00f; course7credit = 0; }
+                }
+                else if (i6 == 1)
+                {
+                    if (i6 == 1 && j6 == 0) { course7 = 4 * 3.66f; course7credit = 4; }
+                    else if (i6 == 1 && j6 == 1) { course7 = 3 * 3.66f; course7credit = 3; }
+                    else if (i6 == 1 && j6 == 2) { course7 = 2 * 3.66f; course7credit = 2; }
+                    else if (i6 == 1 && j6 == 3) { course7 = 1 * 3.66f; course7credit = 1; }
+                    else if (i6 == 1 && j6 == 4) { course7 = 0 * 3.66f; course7credit = 0; }
+                }
+                else if (i6 == 2)
+                {
+                    if (i6 == 2 && j6 == 0) { course7 = 4 * 3.33f; course7credit = 4; }
+                    else if (i6 == 2 && j6 == 1) { course7 = 3 * 3.33f; course7credit = 3; }
+                    else if (i6 == 2 && j6 == 2) { course7 = 2 * 3.33f; course7credit = 2; }
+                    else if (i6 == 2 && j6 == 3) { course7 = 1 * 3.33f; course7credit = 1; }
+                    else if (i6 == 2 && j6 == 4) { course7 = 0 * 3.33f; course7credit = 0; }
+                }
+                else if (i6 == 3)
+                {
+                    if (i6 == 3 && j6 == 0) { course7 = 4 * 3.00f; course7credit = 4; }
+                    else if (i6 == 3 && j6 == 1) { course7 = 3 * 3.00f; course7credit = 3; }
+                    else if (i6 == 3 && j6 == 2) { course7 = 2 * 3.00f; course7credit = 2; }
+                    else if (i6 == 3 && j6 == 3) { course7 = 1 * 3.00f; course7credit = 1; }
+                    else if (i6 == 3 && j6 == 4) { course7 = 0 * 3.00f; course7credit = 0; }
+                }
+                else if (i6 == 4)
+                {
+                    if (i6 == 4 && j6 == 0) { course7 = 4 * 2.66f; course7credit = 4; }
+                    else if (i6 == 4 && j6 == 1) { course7 = 3 * 2.66f; course7credit = 3; }
+                    else if (i6 == 4 && j6 == 2) { course7 = 2 * 2.66f; course7credit = 2; }
+                    else if (i6 == 4 && j6 == 3) { course7 = 1 * 2.66f; course7credit = 1; }
+                    else if (i6 == 4 && j6 == 4) { course7 = 0 * 2.66f; course7credit = 0; }
+                }
+                else if (i6 == 5)
+                {
+                    if (i6 == 5 && j6 == 0) { course7 = 4 * 2.33f; course7credit = 4; }
+                    else if (i6 == 5 && j6 == 1) { course7 = 3 * 2.33f; course7credit = 3; }
+                    else if (i6 == 5 && j6 == 2) { course7 = 2 * 2.33f; course7credit = 2; }
+                    else if (i6 == 5 && j6 == 3) { course7 = 1 * 2.33f; course7credit = 1; }
+                    else if (i6 == 5 && j6 == 4) { course7 = 0 * 2.33f; course7credit = 0; }
+                }
+                else if (i6 == 6)
+                {
+                    if (i6 == 6 && j6 == 0) { course7 = 4 * 2.00f; course7credit = 4; }
+                    else if (i6 == 6 && j6 == 1) { course7 = 3 * 2.00f; course7credit = 3; }
+                    else if (i6 == 6 && j6 == 2) { course7 = 2 * 2.00f; course7credit = 2; }
+                    else if (i6 == 6 && j6 == 3) { course7 = 1 * 2.00f; course7credit = 1; }
+                    else if (i6 == 6 && j6 == 4) { course7 = 0 * 2.00f; course7credit = 0; }
+                }
+                else if (i6 == 7)
+                {
+                    if (i6 == 7 && j6 == 0) { course7 = 4 * 1.66f; course7credit = 4; }
+                    else if (i6 == 7 && j6 == 1) { course7 = 3 * 1.66f; course7credit = 3; }
+                    else if (i6 == 7 && j6 == 2) { course7 = 2 * 1.66f; course7credit = 2; }
+                    else if (i6 == 7 && j6 == 3) { course7 = 1 * 1.66f; course7credit = 1; }
+                    else if (i6 == 7 && j6 == 4) { course7 = 0 * 1.66f; course7credit = 0; }
+                }
+                else if (i6 == 8)
+                {
+                    if (i6 == 8 && j6 == 0) { course7 = 4 * 1.33f; course7credit = 4; }
+                    else if (i6 == 8 && j6 == 1) { course7 = 3 * 1.33f; course7credit = 3; }
+                    else if (i6 == 8 && j6 == 2) { course7 = 2 * 1.33f; course7credit = 2; }
+                    else if (i6 == 8 && j6 == 3) { course7 = 1 * 1.33f; course7credit = 1; }
+                    else if (i6 == 8 && j6 == 4) { course7 = 0 * 1.33f; course7credit = 0; }
+                }
+                else if (i6 == 9)
+                {
+                    if (i6 == 9 && j6 == 0) { course7 = 4 * 1.00f; course7credit = 4; }
+                    else if (i6 == 9 && j6 == 1) { course7 = 3 * 1.00f; course7credit = 3; }
+                    else if (i6 == 9 && j6 == 2) { course7 = 2 * 1.00f; course7credit = 2; }
+                    else if (i6 == 9 && j6 == 3) { course7 = 1 * 1.00f; course7credit = 1; }
+                    else if (i6 == 9 && j6 == 4) { course7 = 0 * 1.00f; course7credit = 0; }
+                }
+                else if (i6 == 10)
+                {
+                    if (i6 == 10 && j6 == 0) { course7 = 4 * 0.00f; course7credit = 4; }
+                    else if (i6 == 10 && j6 == 1) { course7 = 3 * 0.00f; course7credit = 3; }
+                    else if (i6 == 10 && j6 == 2) { course7 = 2 * 0.00f; course7credit = 2; }
+                    else if (i6 == 10 && j6 == 3) { course7 = 1 * 0.00f; course7credit = 1; }
+                    else if (i6 == 10 && j6 == 4) { course7 = 0 * 0.00f; course7credit = 0; }
+                }
+                float add1 = course1 + course2 + course3 + course4 + course5 + course6 + course7;
+                int add2 = course1credit + course2credit + course3credit + course4credit + course5credit + course6credit + course7credit;
+                MessageBox.Show("Your Semester GPA is :\n\n\n" + add1/add2, "Informative Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            }  
         }
     }
 }
