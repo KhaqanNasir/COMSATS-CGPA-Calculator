@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="COMSATS-GPA-Calculator.exe" version="1.0.0.5" publicKeyToken="07042669df24b383" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="calculator-icon_34473.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="COMSATS-GPA-Calculator" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="COMSATS-GPA-Calculator.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="COMSATS-GPA-Calculator.exe" size="817696">
+      <assemblyIdentity name="COMSATS-GPA-Calculator" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>p3Sn1xvljmj7WWmq+eiMnXGSW0J0fViu9wq0i44xpp0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="calculator-icon_34473.ico" size="67646">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tlkv1JpFz2x5WMPqLwS7ALSjHwRyrOy6K5EeqMpAroo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="COMSATS-GPA-Calculator.exe.config" size="179">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KK22eqIcmhgANdEql50c4Q2FO3lxhd2jbhnGHFL60ts=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-QD2RMKU\Laptop Solutions" issuerKeyHash="4405914eafd23440b97ad35638c7738a6ee1e037" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>rRpuZB7vI/ikp+Tl9inzrqJiGgxLMN1s/bMsV3LmuvU=</DigestValue></Reference></SignedInfo><SignatureValue>kp6U8VTap2Gtv0XfBGRK3yUj0mwlG9ivXJXZXRZJr2HefrLgt+BV2OFf2la8mEl1NfFCylJ4LFKQp27zMkhA2EL17DpB5a+c43MJCLVlh0SsbyYkBUkJzuvus9HbNDXhii7x8bH1ZqCAFWSndnNzMNVzpCPq74CcjNS5Vuolo78=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>t1ze8AqlNhC5kkioccyuT9tQspL0Gn0NKg/8bD99EV5U38yfnYXExeX71UxTIICfz3EzKp97uQJzrB7J1bKiy6Om/AowiM776hbEeXCBc3c5etd8Ma4m6vL/fTTg4cdEjPkUcchxVUg0VpBbkUG2UmHObVkDYBRERfanijrxboE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="f5bae672572cb3fd6cdd304b0c1a62a2aef329f6e5e4a7a4f823ef1e646e1aad" Description="" Url=""><as:assemblyIdentity name="COMSATS-GPA-Calculator.exe" version="1.0.0.5" publicKeyToken="07042669df24b383" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-QD2RMKU\Laptop Solutions</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>usvRiB2F0AvGOUYoR8P3kKSCD+0+z3mIM7Qu1nY2jK0=</DigestValue></Reference></SignedInfo><SignatureValue>WKyI2RTqtSdrT6xDSDNCUTX2P82CBIQBzbV8DpvQhvbtwj7EU2h/EBK/Q0OXoIbf3prEH2ENIct/mA8RpOLlaKWY4+lv0mxhgC+sbAdA82MMcb8XpjEqQ7hhuBMvt+NZVUgW30XRvnXWoKvtQre03nisD/YC1ISyjTt7asHEROY=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>t1ze8AqlNhC5kkioccyuT9tQspL0Gn0NKg/8bD99EV5U38yfnYXExeX71UxTIICfz3EzKp97uQJzrB7J1bKiy6Om/AowiM776hbEeXCBc3c5etd8Ma4m6vL/fTTg4cdEjPkUcchxVUg0VpBbkUG2UmHObVkDYBRERfanijrxboE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICGTCCAYKgAwIBAgIQG3zlk5CnwJFHLVIO5wI3UzANBgkqhkiG9w0BAQsFADBLMUkwRwYDVQQDHkAARABFAFMASwBUAE8AUAAtAFEARAAyAFIATQBLAFUAXABMAGEAcAB0AG8AcAAgAFMAbwBsAHUAdABpAG8AbgBzMB4XDTI0MDIxMjE0NDQ0MloXDTI1MDIxMTIwNDQ0MlowSzFJMEcGA1UEAx5AAEQARQBTAEsAVABPAFAALQBRAEQAMgBSAE0ASwBVAFwATABhAHAAdABvAHAAIABTAG8AbAB1AHQAaQBvAG4AczCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAt1ze8AqlNhC5kkioccyuT9tQspL0Gn0NKg/8bD99EV5U38yfnYXExeX71UxTIICfz3EzKp97uQJzrB7J1bKiy6Om/AowiM776hbEeXCBc3c5etd8Ma4m6vL/fTTg4cdEjPkUcchxVUg0VpBbkUG2UmHObVkDYBRERfanijrxboECAwEAATANBgkqhkiG9w0BAQsFAAOBgQACP/w9LH2h0SNcN/6JOsyGpMfQVwA7jWhZEez0nOhHjVTXr9QK3gZLEAhoYW77zO61dZ5Lo6utbPQJcHbxmzkGS8adQxUavT403TGgn12Ph2oUIfraZhhfKjuhmbEOqDxsOuiHJHFPpzVcpqwT84KIwVGrZXinjb36FQCvtRTgUQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

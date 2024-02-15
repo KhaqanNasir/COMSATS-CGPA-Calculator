@@ -1108,29 +1108,33 @@ namespace COMSATS_GPA_Calculator
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if (textBox53.Text == "" && textBox61.Text == "")
+            if (textBox53.Text == "" || textBox61.Text == "")
             {
                 MessageBox.Show("Please Enter atleast Semester 1 GPA ", "Informative Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
             }
             else
             {
                 float sem1GPA = float.Parse(textBox53.Text);
-                float sem2GPA = float.Parse(textBox54.Text);
-                float sem3GPA = float.Parse(textBox55.Text);
-                float sem4GPA = float.Parse(textBox56.Text);
-                float sem5GPA = float.Parse(textBox57.Text);
-                float sem6GPA = float.Parse(textBox58.Text);
-                float sem7GPA = float.Parse(textBox59.Text);
-                float sem8GPA = float.Parse(textBox60.Text);
-
+                float sem2GPA,sem3GPA,sem4GPA,sem5GPA,sem6GPA,sem7GPA,sem8GPA;
                 int sem1Credit = int.Parse(textBox61.Text);
-                int sem2Credit = int.Parse(textBox62.Text);
-                int sem3Credit = int.Parse(textBox63.Text);
-                int sem4Credit = int.Parse(textBox64.Text);
-                int sem5Credit = int.Parse(textBox65.Text);
-                int sem6Credit = int.Parse(textBox66.Text);
-                int sem7Credit = int.Parse(textBox67.Text);
-                int sem8Credit = int.Parse(textBox68.Text);
+                int sem2Credit, sem3Credit,sem4Credit, sem5Credit,sem6Credit,sem7Credit,sem8Credit;
+
+                if (textBox54.Text == "") { sem2GPA=0; } else { sem2GPA = float.Parse(textBox54.Text); }
+                if (textBox55.Text == "") { sem3GPA = 0; } else { sem3GPA = float.Parse(textBox55.Text); }
+                if (textBox56.Text == "") { sem4GPA = 0; } else { sem4GPA = float.Parse(textBox56.Text); }
+                if (textBox57.Text == "") { sem5GPA = 0; } else { sem5GPA = float.Parse(textBox57.Text); }
+                if (textBox58.Text == "") { sem6GPA = 0; } else { sem6GPA = float.Parse(textBox58.Text); }
+                if (textBox59.Text == "") { sem7GPA = 0; } else { sem7GPA = float.Parse(textBox59.Text); }
+                if (textBox60.Text == "") { sem8GPA = 0; } else { sem8GPA = float.Parse(textBox60.Text); }
+
+                if (textBox62.Text == "") { sem2Credit = 0; } else { sem2Credit = int.Parse(textBox62.Text); }
+                if (textBox63.Text == "") { sem3Credit = 0; } else { sem3Credit = int.Parse(textBox63.Text); }
+                if (textBox64.Text == "") { sem4Credit = 0; } else { sem4Credit = int.Parse(textBox64.Text); }
+                if (textBox65.Text == "") { sem5Credit = 0; } else { sem5Credit = int.Parse(textBox65.Text); }
+                if (textBox66.Text == "") { sem6Credit = 0; } else { sem6Credit = int.Parse(textBox66.Text); }
+                if (textBox67.Text == "") { sem7Credit = 0; } else { sem7Credit = int.Parse(textBox67.Text); }
+                if (textBox68.Text == "") { sem8Credit = 0; } else { sem8Credit = int.Parse(textBox68.Text); }
+              
 
                 sem1GPA = sem1GPA * sem1Credit;
                 sem2GPA = sem2GPA * sem2Credit;
