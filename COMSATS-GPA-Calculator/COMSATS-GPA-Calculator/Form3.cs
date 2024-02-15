@@ -38,6 +38,22 @@ namespace COMSATS_GPA_Calculator
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            label112.Visible = false; label113.Visible = false; label114.Visible = false;
+            label115.Visible = false; label116.Visible = false; label117.Visible = false;
+            label118.Visible = false; label119.Visible = false; label120.Visible = false;
+            label121.Visible = false; label122.Visible = false; label123.Visible = false;
+            label124.Visible = false; label125.Visible = false; label126.Visible = false;
+            label127.Visible = false; label128.Visible = false; textBox53.Visible = false;
+            textBox54.Visible = false; textBox55.Visible = false; textBox56.Visible = false;
+            textBox57.Visible = false; textBox58.Visible = false; textBox59.Visible = false;
+            textBox60.Visible = false; label129.Visible = false; label130.Visible = false;
+            label131.Visible = false; label132.Visible = false; label133.Visible = false;
+            label134.Visible = false; label135.Visible = false; label136.Visible = false;
+            textBox61.Visible = false; textBox62.Visible = false; textBox62.Visible = false;
+            textBox63.Visible = false; textBox64.Visible = false; textBox65.Visible = false;
+            textBox66.Visible = false; textBox67.Visible = false; textBox68.Visible = false;
+            button5.Visible = false;
+
             label36.Visible = false; label37.Visible = false; label38.Visible= false;
             label39.Visible = false; textBox21.Visible = false; label40.Visible = false;
             textBox22.Visible = false; label41.Visible = false; label42.Visible = false;
@@ -138,6 +154,22 @@ namespace COMSATS_GPA_Calculator
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            label112.Visible = false; label113.Visible = false; label114.Visible = false;
+            label115.Visible = false; label116.Visible = false; label117.Visible = false;
+            label118.Visible = false; label119.Visible = false; label120.Visible = false;
+            label121.Visible = false; label122.Visible = false; label123.Visible = false;
+            label124.Visible = false; label125.Visible = false; label126.Visible = false;
+            label127.Visible = false; label128.Visible = false; textBox53.Visible = false;
+            textBox54.Visible = false; textBox55.Visible = false; textBox56.Visible = false;
+            textBox57.Visible = false; textBox58.Visible = false; textBox59.Visible = false;
+            textBox60.Visible = false; label129.Visible = false; label130.Visible = false;
+            label131.Visible = false; label132.Visible = false; label133.Visible = false;
+            label134.Visible = false; label135.Visible = false; label136.Visible = false;
+            textBox61.Visible = false; textBox62.Visible = false; textBox62.Visible = false;
+            textBox63.Visible = false; textBox64.Visible = false; textBox65.Visible = false;
+            textBox66.Visible = false; textBox67.Visible = false; textBox68.Visible = false;
+            button5.Visible = false;
+
             label2.Visible = false;  label3.Visible = false; label10.Visible = false;
             textBox1.Visible = false; label11.Visible = false; textBox2.Visible = false;
             label7.Visible = false; label13.Visible = false; textBox4.Visible = false;
@@ -257,6 +289,22 @@ namespace COMSATS_GPA_Calculator
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            label112.Visible = false; label113.Visible = false; label114.Visible = false;
+            label115.Visible = false; label116.Visible = false; label117.Visible = false;
+            label118.Visible = false; label119.Visible = false; label120.Visible = false;
+            label121.Visible = false; label122.Visible = false; label123.Visible = false;
+            label124.Visible = false; label125.Visible = false; label126.Visible = false;
+            label127.Visible = false; label128.Visible = false; textBox53.Visible = false;
+            textBox54.Visible = false; textBox55.Visible = false; textBox56.Visible = false;
+            textBox57.Visible = false; textBox58.Visible = false; textBox59.Visible = false;
+            textBox60.Visible = false; label129.Visible = false; label130.Visible = false;
+            label131.Visible = false; label132.Visible = false; label133.Visible = false;
+            label134.Visible = false; label135.Visible = false; label136.Visible = false;
+            textBox61.Visible = false; textBox62.Visible = false; textBox62.Visible = false;
+            textBox63.Visible = false; textBox64.Visible = false; textBox65.Visible = false;
+            textBox66.Visible = false; textBox67.Visible = false; textBox68.Visible = false;
+            button5.Visible = false;
+
             label36.Visible = false; label37.Visible = false; label38.Visible = false;
             label39.Visible = false; textBox21.Visible = false; label40.Visible = false;
             textBox22.Visible = false; label41.Visible = false; label42.Visible = false;
@@ -973,6 +1021,130 @@ namespace COMSATS_GPA_Calculator
                 int add2 = course1credit + course2credit + course3credit + course4credit + course5credit + course6credit + course7credit;
                 MessageBox.Show("Your Semester GPA is :\n\n\n" + add1/add2, "Informative Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             }  
+        }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            label2.Visible = false; label3.Visible = false; label10.Visible = false;
+            textBox1.Visible = false; label11.Visible = false; textBox2.Visible = false;
+            label7.Visible = false; label13.Visible = false; textBox4.Visible = false;
+            label16.Visible = false; textBox7.Visible = false; label8.Visible = false;
+            label12.Visible = false; textBox3.Visible = false; label15.Visible = false;
+            textBox6.Visible = false; label9.Visible = false; label14.Visible = false;
+            textBox5.Visible = false; label17.Visible = false; textBox8.Visible = false;
+            label4.Visible = false; label18.Visible = false; label22.Visible = false;
+            textBox9.Visible = false; label26.Visible = false; textBox10.Visible = false;
+            label20.Visible = false; label24.Visible = false; textBox11.Visible = false;
+            label28.Visible = false; textBox14.Visible = false; label19.Visible = false;
+            label23.Visible = false; textBox12.Visible = false; label27.Visible = false;
+            textBox13.Visible = false; label21.Visible = false; label25.Visible = false;
+            textBox16.Visible = false; label29.Visible = false; textBox15.Visible = false;
+            label5.Visible = false; label30.Visible = false; label31.Visible = false;
+            textBox17.Visible = false; label32.Visible = false; textBox18.Visible = false;
+            label6.Visible = false; label33.Visible = false; label34.Visible = false;
+            textBox19.Visible = false; label35.Visible = false; textBox20.Visible = false;
+            button2.Visible = false;
+
+            label91.Visible = false; label92.Visible = false; comboBox1.Visible = false;
+            label93.Visible = false; comboBox2.Visible = false; label94.Visible = false;
+            label95.Visible = false; comboBox3.Visible = false; label96.Visible = false;
+            comboBox4.Visible = false; label97.Visible = false; label98.Visible = false;
+            comboBox5.Visible = false; label99.Visible = false; comboBox6.Visible = false;
+            label100.Visible = false; label101.Visible = false; comboBox7.Visible = false;
+            label102.Visible = false; comboBox8.Visible = false; label103.Visible = false;
+            label104.Visible = false; comboBox9.Visible = false; label105.Visible = false;
+            comboBox10.Visible = false; label106.Visible = false; label107.Visible = false;
+            comboBox11.Visible = false; label108.Visible = false; comboBox12.Visible = false;
+            label109.Visible = false; label110.Visible = false; comboBox13.Visible = false;
+            label111.Visible = false; comboBox14.Visible = false; button4.Visible = false;
+
+            label36.Visible = false; label37.Visible = false; label38.Visible = false;
+            label39.Visible = false; textBox21.Visible = false; label40.Visible = false;
+            textBox22.Visible = false; label41.Visible = false; label42.Visible = false;
+            textBox23.Visible = false; label43.Visible = false; textBox24.Visible = false;
+            label44.Visible = false; label45.Visible = false; textBox25.Visible = false;
+            label46.Visible = false; textBox26.Visible = false; label47.Visible = false;
+            label48.Visible = false; textBox27.Visible = false; label49.Visible = false;
+            textBox28.Visible = false; label50.Visible = false; label51.Visible = false;
+            label52.Visible = false; textBox29.Visible = false; label53.Visible = false;
+            textBox30.Visible = false; label54.Visible = false; label55.Visible = false;
+            textBox31.Visible = false; label56.Visible = false; textBox32.Visible = false;
+            label57.Visible = false; label58.Visible = false; textBox33.Visible = false;
+            label59.Visible = false; textBox34.Visible = false; label60.Visible = false;
+            label61.Visible = false; textBox35.Visible = false; label62.Visible = false;
+            textBox36.Visible = false; label63.Visible = false; label64.Visible = false;
+            label65.Visible = false; textBox37.Visible = false; label66.Visible = false;
+            textBox38.Visible = false; label67.Visible = false; label68.Visible = false;
+            label69.Visible = false; textBox39.Visible = false; label70.Visible = false;
+            textBox40.Visible = false; label71.Visible = false; label72.Visible = false;
+            textBox41.Visible = false; label73.Visible = false; textBox42.Visible = false;
+            label74.Visible = false; label75.Visible = false; textBox43.Visible = false;
+            label76.Visible = false; textBox44.Visible = false; label77.Visible = false;
+            label79.Visible = false; textBox45.Visible = false; label78.Visible = false;
+            textBox46.Visible = false; label80.Visible = false; label81.Visible = false;
+            textBox47.Visible = false; label82.Visible = false; textBox48.Visible = false;
+            label83.Visible = false; label84.Visible = false; label85.Visible = false;
+            textBox49.Visible = false; label86.Visible = false; textBox50.Visible = false;
+            label87.Visible = false; label88.Visible = false; label89.Visible = false;
+            textBox51.Visible = false; label90.Visible = false; textBox52.Visible = false;
+            button3.Visible = false;
+
+            label112.Visible = true; label113.Visible = true; label114.Visible = true;
+            label115.Visible = true; label116.Visible = true; label117.Visible = true;
+            label118.Visible = true; label119.Visible = true; label120.Visible = true;
+            label121.Visible = true; label122.Visible = true; label123.Visible = true;
+            label124.Visible = true; label125.Visible = true; label126.Visible = true;
+            label127.Visible = true; label128.Visible = true; textBox53.Visible = true;
+            textBox54.Visible = true; textBox55.Visible = true; textBox56.Visible = true;
+            textBox57.Visible = true; textBox58.Visible = true; textBox59.Visible = true;
+            textBox60.Visible = true; label129.Visible = true; label130.Visible = true;
+            label131.Visible = true; label132.Visible = true; label133.Visible = true;
+            label134.Visible = true; label135.Visible=true; label136.Visible = true;
+            textBox61.Visible = true; textBox62.Visible = true; textBox62.Visible = true;
+            textBox63.Visible = true; textBox64.Visible = true; textBox65.Visible = true;
+            textBox66.Visible = true; textBox67.Visible = true; textBox68.Visible = true;
+            button5.Visible = true;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (textBox53.Text == "" && textBox61.Text == "")
+            {
+                MessageBox.Show("Please Enter atleast Semester 1 GPA ", "Informative Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+            }
+            else
+            {
+                float sem1GPA = float.Parse(textBox53.Text);
+                float sem2GPA = float.Parse(textBox54.Text);
+                float sem3GPA = float.Parse(textBox55.Text);
+                float sem4GPA = float.Parse(textBox56.Text);
+                float sem5GPA = float.Parse(textBox57.Text);
+                float sem6GPA = float.Parse(textBox58.Text);
+                float sem7GPA = float.Parse(textBox59.Text);
+                float sem8GPA = float.Parse(textBox60.Text);
+
+                int sem1Credit = int.Parse(textBox61.Text);
+                int sem2Credit = int.Parse(textBox62.Text);
+                int sem3Credit = int.Parse(textBox63.Text);
+                int sem4Credit = int.Parse(textBox64.Text);
+                int sem5Credit = int.Parse(textBox65.Text);
+                int sem6Credit = int.Parse(textBox66.Text);
+                int sem7Credit = int.Parse(textBox67.Text);
+                int sem8Credit = int.Parse(textBox68.Text);
+
+                sem1GPA = sem1GPA * sem1Credit;
+                sem2GPA = sem2GPA * sem2Credit;
+                sem3GPA = sem3GPA * sem3Credit;
+                sem4GPA = sem4GPA * sem4Credit;
+                sem5GPA = sem5GPA * sem5Credit;
+                sem6GPA = sem6GPA * sem6Credit;
+                sem7GPA = sem7GPA * sem7Credit;
+                sem8GPA = sem8GPA * sem8Credit;
+
+                float semGPA = sem1GPA + sem2GPA + sem3GPA + sem4GPA + sem5GPA + sem6GPA + sem7GPA + sem8GPA;
+                int semCredit = sem1Credit + sem2Credit + sem3Credit + sem4Credit + sem5Credit + sem6Credit + sem7Credit + sem8Credit;
+                MessageBox.Show("Your CGPA is : \n\n" + semGPA / semCredit, "Informative Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            }
         }
     }
 }
